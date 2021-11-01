@@ -44,7 +44,11 @@ const Button = ({variant, className, weight = 'regular', shape, size = 'regular'
     return (
         <button
             style={style}
-            type={}>
+            type={buttonType}
+            className={renderButtonClassName()}
+            onClick={(e) => {
+                disabled ? e.preventDefault() : onClick && onClick(e);
+            }}>
                 <span>
                     {prefix && <div className="btn-prefix">{prefix}</div>}
                     {children}
@@ -52,3 +56,5 @@ const Button = ({variant, className, weight = 'regular', shape, size = 'regular'
             </button>
     );
 };
+
+export default Button;
