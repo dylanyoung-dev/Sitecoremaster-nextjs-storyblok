@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import SbEditable from 'storyblok-react';
-import sbEditable from 'storyblok-react';
+
 import Button from '../Button/Button';
 import BlokProps from './Blok.interface';
 

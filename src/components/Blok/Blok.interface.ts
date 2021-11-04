@@ -1,4 +1,7 @@
 
 export default interface BlokProps {
-    component?: JSON
+    blok: {
+        component: string,
+        uid: string,
+    }
 }

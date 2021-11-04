@@ -3,15 +3,16 @@ import Layout from '../components/Layout';
 import Blok from '../components/Blok';
 
 import Storyblok, { useStoryblok } from "../utils/storyblok";
+import { Stories } from "../interfaces/story.interface";
 
 export default function Page({ story, preview, locale, locales }) {
     const enableBridge = true;
 
-    story = useStoryblok(story, enableBridge, locale);
+    Stories = useStoryblok(story, enableBridge, locale);
 
     return (
         <Layout locale={locale} locales={locales}>
-            <Blok blok={story.content} />
+            <Blok blok={Stories.content} />
         </Layout>
     )
 }
@@ -30,7 +31,7 @@ export async function getStaticProps({ locale, locales, params, preview = false}
         sbParams.cv = Date.now();
     }
 
-    let { data } = await Storyblok.get(`cdn/stories/${slog}`, sbParams);
+    let { data } = await Storyblok.get(`cdn/stories/${slug}`, sbParams);
 
     return {
         props: {
