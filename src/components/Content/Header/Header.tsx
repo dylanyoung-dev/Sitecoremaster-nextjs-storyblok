@@ -4,7 +4,7 @@ import { useState } from 'react';
 import HeaderProps from './Header.interface';
 import TopNavigation from './TopNavigation/TopNavigation';
 
-const Header = ({ blok }: HeaderProps) => {
+const Header = ({ BlokModel }: HeaderProps) => {
     const [isOpenNavMobile, setIsOpenNavMobile] = useState<boolean>(false);
     const [shouldShowSearch, setShouldShowSearch] = useState<boolean>(false);
 
@@ -19,7 +19,7 @@ const Header = ({ blok }: HeaderProps) => {
                                 <Image src="/assets/images/logo.png" alt="Logo" height="114" width="407" />
                             </a>
                         </Link>
-                        <TopNavigation blok={blok}></TopNavigation>
+                        <TopNavigation blok={BlokModel}></TopNavigation>
                         <div className="header-icons">
                             
                         </div>

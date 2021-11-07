@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Blok from '../components/Blok';
+import Layout from '../components/Layout/Layout';
+import Blok from '../components/Blok/Blok';
 
 import Storyblok, { useStoryblok } from "../utils/storyblok";
-import { Stories } from "../interfaces/story.interface";
+import { Stories } from "../interfaces/StoryModel.interface";
 
 export default function Page({ story, preview, locale, locales }) {
     const enableBridge = true;

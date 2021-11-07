@@ -1,9 +1,8 @@
 import React, { ReactNode } from "react";
+import BlokModel from '../../../interfaces/BlokModel.interface';
 
-export default interface ButtonProps {
-    blok: {
-        component: string
-    },
+interface ButtonProps {
+    BlokModel: BlokModel
     // variant?: 'contained' | 'outline' | 'link';
     // className?: string;
     // weight?: 'light' | 'regular' | 'medium' | 'bold';
@@ -19,3 +18,5 @@ export default interface ButtonProps {
     // prefix?: ReactNode;
     // color?: 'primary' | 'secondary' | 'third' | 'four';
 }
+
+export default ButtonProps;

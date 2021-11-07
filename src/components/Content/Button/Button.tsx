@@ -2,7 +2,7 @@ import ButtonProps from './Button.interface';
 import classNames from 'classnames';
 import Link from 'next/link';
 
-const Button = ({variant, className, weight = 'regular', shape, size = 'regular', style, href, fullwidth, disabled, buttonType, onClick, children, prefix, color = 'primary' }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ BlokModel }) => {
 
     const renderVariantClassName = (param: any, prefix?: string) => {
         if (param) {
@@ -11,18 +11,18 @@ const Button = ({variant, className, weight = 'regular', shape, size = 'regular'
         return '';
     };
 
-    const renderButtonClassName = () => {
-        return classNames(
-            'btn',
-            renderVariantClassName(shape, 'shape'),
-            renderVariantClassName(weight, 'weight'),
-            renderVariantClassName(size, 'size'),
-            renderVariantClassName(variant, 'variant'),
-            renderVariantClassName(color, 'color'),
-            { '-disabled': disabled, '-fullwidth': fullwidth },
-            className,
-        );
-    };
+    // const renderButtonClassName = () => {
+    //     return classNames(
+    //         'btn',
+    //         renderVariantClassName(shape, 'shape'),
+    //         renderVariantClassName(weight, 'weight'),
+    //         renderVariantClassName(size, 'size'),
+    //         renderVariantClassName(variant, 'variant'),
+    //         renderVariantClassName(color, 'color'),
+    //         { '-disabled': disabled, '-fullwidth': fullwidth },
+    //         className,
+    //     );
+    // };
 
     if (href) {
         return (

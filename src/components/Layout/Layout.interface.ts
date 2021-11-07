@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
+import BlokModel from '~/interfaces/BlokModel.interface';
 
 export default interface LayoutProps {
-    blok: BlokModel,
+    BlokModel: BlokModel,
     children: ReactNode;
     locale: string;
-    locales: []
+    locales: [];
 }
