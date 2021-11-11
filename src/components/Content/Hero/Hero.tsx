@@ -1,9 +1,9 @@
-import HeroProps from './Hero.interface';
+import { HeroProps } from './Hero.interface';
 
-
-export default function Hero() {
+const Hero: React.FC<HeroProps> = ({Story, Component}) => {
     return (
-        <>
-        </>
+        <></>
     )
-};
+}
+
+export { Hero };

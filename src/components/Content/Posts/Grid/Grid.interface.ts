@@ -1,7 +1,7 @@
-import BlokModel from "~/interfaces/BlokModel.interface";
+import BlokModel from "~/interfaces/StoryBlok.interface";
 
 interface GridProps {
-    BlokModel: BlokModel
+    BlokModel?: BlokModel
 }
 
 export default GridProps;

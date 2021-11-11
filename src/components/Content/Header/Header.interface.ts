@@ -1,5 +1,8 @@
-import BlokModel from '~/interfaces/BlokModel.interface';
+import { Component, Story } from '~/interfaces/StoryBlok.interface';
 
-export default interface HeaderInterface {
-    BlokModel: BlokModel
+interface HeaderProps {
+    Component: Component,
+    Story: Story
 }
+
+export type { HeaderProps }

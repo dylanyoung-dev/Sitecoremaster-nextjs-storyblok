@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import HeaderProps from './Header.interface';
-import TopNavigation from './TopNavigation/TopNavigation';
+import { Placeholder } from '~/components/Content/Placeholder/Placeholder';
+import { HeaderProps } from './Header.interface';
 
-const Header = ({ BlokModel }: HeaderProps) => {
+const Header = ({ Component, Story }: HeaderProps) => {
     const [isOpenNavMobile, setIsOpenNavMobile] = useState<boolean>(false);
     const [shouldShowSearch, setShouldShowSearch] = useState<boolean>(false);
 
     return (
         <>
             <div className="header-spacing" />
-            <header className="">
+            <header className="theme-default">
                 <div className="container">
                     <div className="header-wrapper">
                         <Link href="/">
@@ -19,7 +19,7 @@ const Header = ({ BlokModel }: HeaderProps) => {
                                 <Image src="/assets/images/logo.png" alt="Logo" height="114" width="407" />
                             </a>
                         </Link>
-                        <TopNavigation blok={BlokModel}></TopNavigation>
+                        <Placeholder Story={Story} PlaceholderName='navigation'></Placeholder>
                         <div className="header-icons">
                             
                         </div>
@@ -30,4 +30,4 @@ const Header = ({ BlokModel }: HeaderProps) => {
     );
 };
 
-export default Header;
+export { Header };

@@ -1,7 +1,8 @@
-import BlokModel from '../../../interfaces/BlokModel.interface';
+import { Component, Story } from '~/interfaces/StoryBlok.interface';
 
 interface FooterProps {
-    blok: BlokModel
+    Component: Component,
+    Story: Story
 }
 
-export default FooterProps;
+export type { FooterProps };

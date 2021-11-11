@@ -1,7 +1,7 @@
 import TopNavigationProps from './TopNavigation.interface';
 import Link from 'next/link';
 
-const TopNavigation: React.FC<any> = () => {
+const TopNavigation: React.FC<TopNavigationProps> = ({ Story, Component }) => {
     return (
         <nav>
             <ul>
