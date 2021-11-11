@@ -1,7 +1,8 @@
-import BlokModel from "~/interfaces/StoryBlok.interface";
+import { Component, Story } from "~/interfaces/StoryBlok.interface";
 
 interface SubscribeSidebarProps {
-    BlokModel?: BlokModel;
+    Component: Component,
+    Story: Story
 }
 
 export type { SubscribeSidebarProps };

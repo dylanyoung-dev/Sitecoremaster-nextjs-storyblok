@@ -1,6 +1,6 @@
 import { SubscribeSidebarProps } from "./Subscribe.interface";
 
-const SubscribeSidebar: React.FC<SubscribeSidebarProps> = ({ BlokModel }) => {
+const SubscribeSidebar: React.FC<SubscribeSidebarProps> = ({ Component, Story }) => {
 
     return (
         <form className="subscribe-box" action="/" method="POST">
