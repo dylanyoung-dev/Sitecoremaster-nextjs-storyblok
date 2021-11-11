@@ -1,7 +1,8 @@
 import { TrendingPostsProps } from "./TrendingPosts.interface";
 
-const TrendingPosts: React.FC<TrendingPostsProps> = ({ BlokModel }) => {
+const TrendingPosts: React.FC<TrendingPostsProps> = ({ Story, Component }) => {
 
+    // TODO: Likely dynamic as well
     return (
         <div className="blog-sidebar-section -trending-post">
             <div className="center-line-title">
