@@ -1,7 +1,8 @@
-import BlokModel from "~/interfaces/StoryBlok.interface";
+import { Story, Component } from "~/interfaces/StoryBlok.interface";
 
 interface ContentCardProps {
-    BlokModel?: BlokModel
+    Story: Story,
+    Component: Component
 }
 
 export type { ContentCardProps };

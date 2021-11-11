@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 
 
-const ArticlePost: React.FC<ContentCardProps> = ({ BlokModel }) => {
+const ArticlePost: React.FC<ContentCardProps> = ({ Story, Component }) => {
 
     // Will have 3 types of Article Post, 1 = Single Image, 2 = 3 Images, of 3 = Multiple images
 
@@ -16,7 +16,7 @@ const ArticlePost: React.FC<ContentCardProps> = ({ BlokModel }) => {
     );
 }
 
-const PodcastPost: React.FC<ContentCardProps> = ({ BlokModel }) => {
+const PodcastPost: React.FC<ContentCardProps> = ({ Story, Component }) => {
     return (
         <div className="post-card -full -audio -center">
             <audio className="audio" id="audio-player">
@@ -48,7 +48,7 @@ const PodcastPost: React.FC<ContentCardProps> = ({ BlokModel }) => {
     );
 }
 
-const VideoPost: React.FC<ContentCardProps> = ({ BlokModel }) => {
+const VideoPost: React.FC<ContentCardProps> = ({ Story, Component }) => {
 
     return (
         <div className="post-card -full -video -center">

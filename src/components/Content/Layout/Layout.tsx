@@ -1,7 +1,7 @@
 import { LayoutProps } from './Layout.interface';
 import { Header, Footer } from '~/components/Content';
 
-const Layout: React.FC<LayoutProps> = ({ Story, Component, children }) => {
+const Layout: React.FC<LayoutProps> = ({ Story, children }) => {
     return (
         <div>
             <Header Story={Story}></Header>

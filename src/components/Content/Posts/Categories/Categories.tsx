@@ -1,6 +1,6 @@
 import { BlogSideBarCategoryProps } from './Categories.interface';
 
-const BlogSideBarCategories: React.FC<BlogSideBarCategoryProps> = ({ BlokModel }) => {
+const BlogSideBarCategories: React.FC<BlogSideBarCategoryProps> = ({ Story, Component }) => {
 
     return (
         <div className="blog-sidebar-section -category">
