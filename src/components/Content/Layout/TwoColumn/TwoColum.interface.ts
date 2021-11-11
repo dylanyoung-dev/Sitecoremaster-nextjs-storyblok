@@ -1,4 +1,8 @@
+import { Component, Story } from "~/interfaces/StoryBlok.interface";
 
-export default interface TwoColumnProps {
-
+interface TwoColumnProps {
+    Story: Story,
+    Component: Component
 }
+
+export type { TwoColumnProps };

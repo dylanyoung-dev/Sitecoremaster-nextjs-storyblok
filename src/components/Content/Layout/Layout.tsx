@@ -1,16 +1,16 @@
-import LayoutProps from './Layout.interface';
+import { LayoutProps } from './Layout.interface';
 import { Header, Footer } from '~/components/Content';
 
-const Layout: React.FC<LayoutProps> = ({ BlokModel, children, locale, locales }) => {
+const Layout: React.FC<LayoutProps> = ({ Story, Component, children }) => {
     return (
         <div>
-            <Header BlokModel={BlokModel}></Header>
+            <Header Story={Story}></Header>
             <div id="content">
                 <div className="container">
                     {children}
                 </div>
             </div>
-            <Footer BlokModel={BlokModel}></Footer>
+            <Footer Story={Story}></Footer>
         </div>
     )
 };

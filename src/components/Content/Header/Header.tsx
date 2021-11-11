@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Placeholder } from '~/components/Content/Placeholder/Placeholder';
 import { HeaderProps } from './Header.interface';
 
-const Header = ({ Component, Story }: HeaderProps) => {
+const Header: React.FC<HeaderProps> = ({ Story }) => {
     const [isOpenNavMobile, setIsOpenNavMobile] = useState<boolean>(false);
     const [shouldShowSearch, setShouldShowSearch] = useState<boolean>(false);
 
